@@ -1,0 +1,109 @@
+/* Global */
+body {
+    font-family: "Inter", Arial, sans-serif;
+    background-color: #fff;
+    color: #111111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container */
+.container {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+header p {
+    color: #999;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    margin-left: 2rem;
+    padding-left: 0;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: calc(18.2rem + 15px + 5px);
+    top: 10px;
+    bottom: 10px;
+    width: 2px;
+    height: 270px;
+    background-color: #000;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.timeline-item .date {
+    color: #999;
+    font-size: 13px;
+    width: 18.2rem;
+    text-align: right;
+    margin-right: 16px;
+}
+
+.timeline-item .dot {
+    width: 10px;
+    height: 10px;
+    background: #000;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 16px;
+    z-index: 1;
+}
+
+.timeline-item .content {
+    font-size: 15px;
+    color: #111;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.5s ease;
+}
+
+footer button:hover {
+    background-color: #333;
+}
